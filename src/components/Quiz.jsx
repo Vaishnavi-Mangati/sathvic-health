@@ -1,10 +1,9 @@
 import React, { useState } from 'react'
 import { questions } from '../data/questions';
-
-console.log("Questions: ", questions.question);
-console.log("Options: ", questions.options);
+import { useNavigate } from 'react-router-dom';
 
 const Quiz = () => {
+  const navigate = useNavigate()
   const [vataScore, setVataScore] = useState(0);
   const [pittaScore, setPittaScore] = useState(0);
   const [kaphaScore, setkaphaScoure] = useState(0);
@@ -18,7 +17,8 @@ const Quiz = () => {
         setSelectedOption(null);
       }
       else {
-        finalResult()
+        // used to go to other page(route) programatically
+        navigate('/result',{state: {vataScore, pittaScore, kaphaScore}})
       }
     }
     else {
