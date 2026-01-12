@@ -26,3 +26,7 @@ WORK_FLOW:
     React 19 is the latest version and it doesn't support many libraries like <BrowserRouter> so the UI breaks and also all things doesn't work as expected so I changed version to React 18
 
     Flow: question(data/questions) -> components/Quiz.jsx -> Result(get scores) -> utils/getBodyType.js (core logic) -> Result(displays the result page).
+
+3. - 05-01-26 - Added images to the questions in data folder and questions file. Upadated it in the quiz page.
+   - Should work on styling part of the page.
+   
