@@ -30,3 +30,7 @@ WORK_FLOW:
 3. - 05-01-26 - Added images to the questions in data folder and questions file. Upadated it in the quiz page.
    - Should work on styling part of the page.
    
+4. - 12-01-26 - Working on the home section
+   - Created the Home module in components and installed 2 node moudles (@headlessui/react and @heroicons/react)
+   - used this packages to get navbar from the tailwind as it contains icons 
+   - @headlessUi provides accessible UI behaviour using styling
