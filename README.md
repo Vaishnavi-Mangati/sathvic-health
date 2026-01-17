@@ -34,3 +34,10 @@ WORK_FLOW:
    - Created the Home module in components and installed 2 node moudles (@headlessui/react and @heroicons/react)
    - used this packages to get navbar from the tailwind as it contains icons 
    - @headlessUi provides accessible UI behaviour using styling
+
+5. - 17-01-26 - Previously created the home screen and implemented the button functionality to go to the quiz 
+   - Ratherthan creating 3 differnet pages for showing results. Wrote the core functionality in the Result page and 
+     added data in the related to 3 body types in the data folder by creating resultData file and giving key as body types
+     and their info as value and in that value also they have key and value pairs as title, description (for now and in future expecting to add more key values).
+   - Now without using many pages and file we dynamically accessing using props method only in single componenet, so it reduces 
+     editing similar code many times and also duplicate code.
