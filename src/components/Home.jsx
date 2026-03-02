@@ -1,7 +1,10 @@
 import React from 'react'
-import Navbar from './Navbar'
 import { useNavigate } from 'react-router-dom'
+import About from './About'
 import Quiz from './Quiz'
+import Features from './Features'
+import Contact from './Contact'
+import Navbar from './Navbar'
 
 const Home = () => {
     const navigate = useNavigate();
@@ -21,19 +24,18 @@ const Home = () => {
     return (
         <>
         <Navbar />
-        <div className='flex flex-col justify-center items-center h-auto'>
-            <h1>Discover your body type and bulid a healthier you</h1>
-                <img src='/images/HeroImage.png' className='h-120 rounded-[500px]' />
-            <h1>"Before you change your body"</h1>
-            <button className='border-2 p-3 rounded-2xl m-2' onClick={takeQuiz}>Know your Body</button>
-            <p>It takes less than 3 minutes</p>
+        <div className='flex flex-col justify-center items-center h-auto bg-green-300 pt-20'>
+            <h1 className='border p-2 rounded-3xl m-5'>DISCOVER YOUR TRUE NATURE</h1>
+            <h1 className='text-6xl p-5'>Balance Body and Mind with <span>Ayurveda</span></h1>
+            <p className='text-m pb-10'>Unlock a personalized health journey tailored to your unique Dosha. Combine ancient wisdom with modern science to live your healthiest life.</p>
+            <img src='/images/HeroImage.png' className='h-120 rounded-[500px]' />
+            <button className='border-2 p-3 rounded-xl m-2 px-10 mt-10  ' onClick={takeQuiz}>Know your Body</button>
+            <p>"This takes less than 3 minutes"</p>
         </div>
 
-        {/* direct redirection to the result page, not to take the quiz each and every time */}
-        <button onClick={goToResultPage}>
-            Go to Result page(Dev mode only)
-        </button>
-        {/* till here this code should be removed after developing the result page */}
+        <About/>
+        <Features/>
+        <Contact/>
         </>
     )
 }
